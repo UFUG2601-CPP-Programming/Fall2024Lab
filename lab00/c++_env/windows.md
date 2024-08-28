@@ -35,7 +35,7 @@ After you download x86_64-win32-seh, you just need to unzip it and place the fol
 location. 
 
 ### Step 4: Add MinGW-w64 to the Enviroment Path
-You should add the mingw64/bin folder to the environment path to make it be recognized by the VS Code.
+You should add the mingw64/bin folder to the environment path to make it be recognized by the VS Code. You can find the enviroment path in Setting/System/Avanced system settings
 
 ![path](./win/mingw_path.gif)
 
