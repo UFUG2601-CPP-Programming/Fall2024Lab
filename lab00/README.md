@@ -15,7 +15,7 @@ the tutorials for different operation systems: Windows, Linux, and MacOS.
 
 ## Online Judge (OJ) System
 ### Introduction
-The OJ system is a platform where you can submit your code and receive results. It includes a 
+The [OJ system](https://onlinejudge.hkust-gz.edu.cn/) is a platform where you can submit your code and receive results. It includes a 
 compilation environment and can execute programs. While it doesn't offer an interactive terminal to 
 display output, it does indicate whether your result is correct.  
 When you program runs correctly, you can see:
@@ -23,7 +23,7 @@ When you program runs correctly, you can see:
 You can also see the detailed results in the **Status** page.
 ![status](./img/status.png)
 ### Tasks
-Today you need to register and login in the OJ system, and finish the **contest00**. It only contains a simple problem, you can solve it as long as you know how to output information in C++.
+Today you need to register and login in the OJ system, and finish the problems in [**contest00**](https://onlinejudge.hkust-gz.edu.cn/contest/3/problems). It only contains a simple problem, you can solve it as long as you know how to output information in C++.
 ### Note
 1. The deadline for each contest is 23:59 on Sunday and you must submit your code before then.
 1. You can submit your code multiple times.
