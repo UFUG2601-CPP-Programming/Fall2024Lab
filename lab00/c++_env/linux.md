@@ -1,12 +1,12 @@
 # Linux C++ Environment Setup Tutorial
 Install gcc and gdb. If you use Ubuntu or Debian, you can use the following command:
 ```shell
-sudo apt-get update
-sudo apt-get install build-essential gdb
+$ sudo apt-get update
+$ sudo apt-get install build-essential gdb
 ```
 Create a test file
 ```shell
-touch main.cpp
+$ touch main.cpp
 ```
 Write the following code in the file:
 ```cpp
@@ -19,8 +19,8 @@ int main() {
 ```
 Compile and run
 ```shell
-g++ main.cpp -o main
-./main
+$ g++ main.cpp -o main
+$ ./main
 ```
 If you see the output "HKUST(GZ) 2024", you have successfully set up the C++ environment in Linux.
 ### Addtional Content

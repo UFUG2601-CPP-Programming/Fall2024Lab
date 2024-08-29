@@ -2,9 +2,9 @@
 Mac ususally has already installed the clang compiler and the make tool. So you can 
 create a test cpp file directly
 ```shell
-mkdir test
-cd test
-touch main.cpp
+$ mkdir test
+$ cd test
+$ touch main.cpp
 ```
 Write the following code in the file:
 ```cpp
@@ -17,8 +17,8 @@ int main() {
 ```
 Compile and run
 ```shell
-clang++ main.cpp -o main
-./main
+$ clang++ main.cpp -o main
+$ ./main
 ```
 If you see the output "HKUST(GZ) 2024", you have successfully set up the C++ environment in Mac.
 
