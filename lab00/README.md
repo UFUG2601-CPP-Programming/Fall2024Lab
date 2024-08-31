@@ -26,7 +26,7 @@ You can also see the detailed results in the **Status** page.
 An account has been created for each student in the OJ system. Your username is your full name with the last name in uppercase. Your email address is your student email, and your password is your email address without the domain name. For example:
 - Username: **Sansan ZHANG**
 - Email: szhang678@connect.hkust-gz.edu.cn
-- Password: **szhang679**
+- Password: **szhang678**
 ### Tasks
 Today you need to register and login in the OJ system, and finish the problems in [**contest00**](https://onlinejudge.hkust-gz.edu.cn/contest/3/problems). It only contains a simple problem, you can solve it as long as you know how to output information in C++.
 ### Note
