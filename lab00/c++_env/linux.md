@@ -26,8 +26,8 @@ If you see the output "HKUST(GZ) 2024", you have successfully set up the C++ env
 ### Addtional Content
 If you want to use makefile, here is an example for you:
 ```makefile
-src = $(wildcard ./*.c)  
-obj = $(patsubst %.c, %.o, $(src))  
+src = $(wildcard ./*.cpp)  
+obj = $(patsubst %.cpp, %.o, $(src))  
 #obj = $(src:%.c=%.o)  
 target = app  
 CC = g++  
