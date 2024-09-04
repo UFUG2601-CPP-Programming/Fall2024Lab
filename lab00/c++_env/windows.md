@@ -6,7 +6,8 @@ For Windows users, we recommend two free and lightweight softwares as the C++ de
 
 **Code::Blocks**
 1. It can only support C/C++ and Fortran.
-1. The C/C++ easy is easy to set up.  
+1. The C/C++ easy is easy to set up.
+  
 You can choose anyone of them according to your preference. You can also use other C++ development 
 tools, such as Visual Studio, Eclipse, etc.
 
