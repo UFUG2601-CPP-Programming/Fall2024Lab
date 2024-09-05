@@ -1,5 +1,5 @@
 # Windows C++ Environment Setup Tutorial
-For Windows users, we recommend two free and lightweight softwares as the C++ development environments: Visual Studio Code (VS Code) and Code::Blocks. Here are the key features of these two softwares:
+For Windows users, we recommend two free and lightweight softwares as the C++ development environments: Visual Studio Code (VS Code) and Code::Blocks. Here are the key features of these two softwares:  
 **Visual Studio Code (VS Code)**  
 1. It contains many useful plugins and can be configued to support almost every major programming language including C/C++, Python, Java, etc.
 1. The C/C++ environment in Windows may be a little difficult to be configured.  
