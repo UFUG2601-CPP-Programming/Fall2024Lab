@@ -32,7 +32,6 @@ The cppreference is a very useful website that you can refer to.
 ### Tutorial 1.1 Define and Print a Number i.e. `int`
 
 ```cpp
-#include <cstdio>
 #include <iostream>
 
 int main(){
@@ -45,9 +44,6 @@ int main(){
     // Print the integer number in std::cout
     std::cout << "The value of defined integer is: " << intNumber << std::endl;
 
-    // Print the integer number in printf
-    printf("The value of defined integer is: %d\n", intNumber);
-
     return 0;
 }
 ```
@@ -55,7 +51,6 @@ int main(){
 ### Tutorial 1.2 Print variables of different data types
 
 ```cpp
-#include <cstdio>
 #include <iostream>
 #include <string>
 
@@ -74,28 +69,17 @@ int main(){
     std::cout << "The value of defined char is: " << chr << std::endl;
     std::cout << "The value of defined string is: " << str << std::endl;
 
-    // Print the variable in printf
-    printf("The value of defined integer is: %d\n", intNumber);
-    printf("The value of defined float is: %f\n", floatNumber);
-    printf("The value of defined long is: %ld\n", longNumber);
-    printf("The value of defined char is: %c\n", chr);
-    printf("The value of defined string is: %s\n", str.c_str());
-
     return 0;
 }
 ```
 
 ### Simple Practice
 
-* What happens when a character is printed using the `%d` placeholder?
-
-* How to print floating-point numbers that retain three decimals? (Hint: `std::setprecision` or `%.f`)
+* How to print floating-point numbers that retain three decimals? (Hint: try to use `std::fixed` and `std::setprecision`)
 
 * How to assign value `"` to `chr`?
 
-* (Optional) What is the size of a `char` variable and why? What is the size of a string `str`?
-
-* (Optional) How to concat two strings?
+* (Optional) What is the size of a `char` variable and why?
 
 ## Tutorial 2: Learn the limits of data types
 
