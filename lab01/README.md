@@ -86,8 +86,8 @@ int main(){
 We can use the utilities from the header file `<limits>` to check the numeric limits of data types.
 
 ```cpp
-#incldue <iostream>
-#incldue <limits>
+#include <iostream>
+#include <limits>
 
 int main(){
 		
