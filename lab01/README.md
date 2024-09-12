@@ -1,5 +1,8 @@
 # Lab 01 - Meet The Data Types and Operators!
 
+## Important Notes
+- **Please finish the problems in the contest "Lab01" in OJ by the end of this week (2024-9-15 23:59:59).**
+
 ## Our Goal in Lab 01
 
 1. Learn how to declare variables of different data types.
