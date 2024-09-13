@@ -30,7 +30,7 @@ then search for **C++** and install it.
 ### Step 3: Download MinGW-w64
 VS Code is just a code editor, so you need to download a compiler to compile your code. MinGW-w64 integrates the GCC compiler into Windows. You can download MinGW-w64 from [niXman](https://github.com/niXman/mingw-builds-binaries/releases).
 
-![download](./win/mingw_download.png)
+![download](./win/mingw_niXman.png)
 
 After you download x86_64-14.2.0-release-win32-seh-ucrt-rt_v12-rev0.7z, you just need to unzip it and place the folder to a proper
 location. 
