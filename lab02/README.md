@@ -99,7 +99,7 @@ In general, nested if-else statements involve having an `if` statement inside an
 
 The previous program demonstrates a unique example where another `if-else` statement is used within the '`else`' block. Typically, nested if-else statements will follow this pattern:
 
-```cpp
+```
 
 if(condition1)
 {
