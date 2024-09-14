@@ -95,29 +95,8 @@ int main(){
 
 **NOTE**
 
-In general, nested if-else statements involve having an `if` statement inside another `if-else` statement. They are used when implementing multiple layers of conditions (conditions within conditions). In C++, any number of nesting levels are allowed. 
+In general, nested if-else statements involve having an `if` statement inside another `if-else` statement. They are used when implementing multiple layers of conditions (conditions within conditions). In C++, any number of nesting levels are allowed. The previous program demonstrates an example where another `if-else` statement is used within the `else` block. 
 
-The previous program demonstrates a unique example where another `if-else` statement is used within the '`else`' block. Typically, nested if-else statements will follow this pattern:
-
-```
-
-if(condition1)
-{
-    // Code to be executed 
-    if(condition2)
-    {
-        // Code to be executed
-    }
-    else
-    {
-         // Code to be executed
-    }
-}
-else
-{
-    // code to be executed
-}
-```
 
 ### Example 3: switch-case
 When a program needs to take different actions based on the value of a specific variable (condition) which is limited to several discrete values, the `switch-case` statement could be used. Below is a sample program that performs four different computations based on the user input operator.
