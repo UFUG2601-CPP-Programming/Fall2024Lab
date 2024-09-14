@@ -29,14 +29,19 @@ A sample code that provides feedback to students based on their input grade is s
 
 ```cpp
 #include <iostream>
+
 using namespace std;
+
 int main(){
     // Define an integer variable "mark" to store the inputted mark.
     int mark;
+    
     // Print a prompt for the user to input their grade.
     cout << "Input your mark [0-100]: ";
+    
     // Get the input mark from the terminal and store it in the variable "mark"
     cin >> mark;
+    
     // Use an "if-else" statement to provide different feedback based on the mark.
     if (mark >= 60) {
         // Provide feedback for a mark of 60 and above 
@@ -55,7 +60,6 @@ int main(){
 If you are familiar with all the course material, you should realize that the `if-else` statement in the previous program can be rewritten using the conditional operator as follows:
 
 ```cpp
-
 cout << (mark >= 60) ? "Congratulation!\nKeep it up!" :  "Try Harder!" << endl;
 ```
 
