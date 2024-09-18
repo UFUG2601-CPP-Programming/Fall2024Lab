@@ -4,17 +4,17 @@
 - **Please finish the problems in the contest "Lab02" in OJ by the end of this week (2024-9-22 23:59:59).**
 
 ## Our Goal in Lab 02
-1. Learn how to use control syntax, such as `if-else`,`switch`, to implement simple decision-making processes.
+In this lab, you should learn how to use control syntax, such as `if-else`,`switch`, to implement simple decision-making processes.
 
-2. Learn how to use simple loops to perform repeated actions and understand the distinctions between the `for` loop, `while` loop, and `do-while` loop.
+
 
 ## Introduction
-In this lab, you will learn the control flow statements in C++. You will learn how to use `if-else` statements, `switch` statements, `while` loops, `do-while` loops, and `for` loops.
-
 There are three basic flow control constructs - sequential, conditional (or decision), and loop (or iteration). 
 The **sequential** structure: the execution process is from the top to the bottom line by line. 
 The **conditional** structure is using if-else statement to verify whether a statement satisfys some specific condition and then make choose. 
 The **loop** structure is used to execute some logic operation repeatedly.
+
+In this lab, we will primarily focus on the conditional structure for flow control in C++. You will learn how to use `if-else` statements, and `switch` statements.
 
 ## Sequential Flow Control
 A program is a sequence of instructions. **Sequential flow** is the most common and straight-forward, where programming statements are executed in the order that they are written  from top to bottom in a sequential manner. 
@@ -155,70 +155,8 @@ int main(){
    
 2. The `default` keyword specifies code to execute if there is no case match. Like the `break` keyword, although the `default` keyword is not required in a `switch-case` statement, it is advisable to include it to handle unexpected values of the condition variable.
 
-### Example 4: Loop
-Loops can execute a block of code as long as a specified condition is met. They are useful as they save time, reduce errors, and enhance code readability. 
-The common loop structures in C++ include the `for` loop, `while` loop, and `do-while` loop. Although they are slightly different in their most appropriate application scenarios, all of them can be utilized to accomplish the same task in most cases. 
-The sample programs below demonstrate how to use these three loop structures to calculate the sum from 1 to 100.
-
-**`for` loop version**
-```cpp
-int sum = 0;
-for (int number = 1; number <= 100; ++number) {
-    sum += number;
-}
-```
-
-**`while` loop version**
-```cpp
-
-int sum = 0, number = 1;
-while (number <= 100) {
-    sum += number;
-    ++number;
-}
-```
-
-**`do-while` loop version**
-```cpp
-
-int sum = 0, number = 1;
-do {
-    sum += number;
-    ++number;
-} while (number <= 100);
-```
-
-### Example 5: break and continue
-As previously mentioned, loop structures allow us to repeatedly execute a block of code. However, there are special cases where we may want to skip over a particular iteration or exit the entire loop. In such situations, we can use the `break` and `continue` keywords.
-
-Specifically, the `break` statement can be used to exit out of a loop entirely. On the other hand, the `continue` statement allows us to skip the current iteration (in the loop) if a specified condition is met, and proceed with the next iteration. The program below demonstrates the distinct functionalities of `break` and `continue`.
-
-```cpp
-#include <iostream>
-using namespace std;
-int main(){
-    // Continue Case
-    for (int i = 0; i < 10; i++){
-        if (i == 5){
-            // skip iteration when i equals 5
-            continue;
-        }
-        cout << i << endl;
-    }
-    // Break Case
-    for (int i = 0; i < 10; i++){
-        if (i == 5){
-            // Exit the loop when i equals 5
-            break;
-        }
-        cout << i << endl;
-    }
-    return 0;
-}
-```
-
 ### Additional Contents
-Here is some well-designed online C++ lab material on control flow, featuring interesting exercises and sample codes.
+Here is some well-designed online C++ lab material on conditional structure for flow control, featuring interesting exercises and sample codes.
 
 **LabEx**
 https://labex.io/tutorials/cpp-c-flow-control-178536
@@ -227,5 +165,5 @@ https://labex.io/tutorials/cpp-c-flow-control-178536
 https://horstmann.com/bigcpp/labs/BigC_ch4.htm
 
 **W3Schools**
-https://www.w3schools.com/CPP/cpp_for_loop.asp
+https://www.w3schools.com/CPP/cpp_conditions.asp
 
