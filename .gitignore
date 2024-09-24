@@ -1,2 +1,8 @@
 .vscode
 .idea
+.DS_Store
+__pycache__
+
+.bin
+.log
+.zip
