@@ -12,6 +12,8 @@ bool check_prime(int x) {
 
 
 int main() {
-    cout << check_prime(19) << endl;
+    int x; //Assume x >= 2
+    cin >> x;
+    cout << check_prime(x);
     return 0;
 }
