@@ -14,6 +14,6 @@ bool check_prime(int x) {
 int main() {
     int x; //Assume x >= 2
     cin >> x;
-    cout << check_prime(x);
+    cout << boolalpha << check_prime(x) << endl;
     return 0;
 }
