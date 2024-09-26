@@ -6,13 +6,13 @@
 ## Some tips for VS Code
 1. Create a folder for each program.
 
-    <img src="./img/tip1-wrong.png" alt="Image 1" width="44%" style="display: inline-block; margin-right: 5%;" />
-    <img src="./img/tip1-correct.png" alt="Image 2" width="45%" style="display: inline-block;" />
+    <img src="./img/tip1-wrong.png" alt="Image 1" width="45%" style="display: inline-block; margin-right: 5%;" />
+    <img src="./img/tip1-correct.png" alt="Image 2" width="44%" style="display: inline-block;" />
 
-2. Open the specific folder instead of the root folder (especially for the users who want to use the button to run the code). For example, if you want to run the code in the folder "lab01", you just open the folder "lab01" using VS Code.
+2. Open the specific folder instead of the root folder (especially for the users who want to use the button to run the code). For example, if you want to run the code in the folder "prob01", you just open the folder "prob01" using VS Code.
 
-    <img src="./img/tip2-wrong.png" alt="Image 1" width="39%" style="display: inline-block; margin-right: 5%;" />
-    <img src="./img/tip2-correct.png" alt="Image 2" width="48%" style="display: inline-block;" />
+    <img src="./img/tip2-wrong.png" alt="Image 1" width="45%" style="display: inline-block; margin-right: 5%;" />
+    <img src="./img/tip2-correct.png" alt="Image 2" width="45%" style="display: inline-block;" />
 
 3. Avoid using the Chinese name for the folder or file.
     * This one and the above two tips can help you to solve many problems about the local environment.
