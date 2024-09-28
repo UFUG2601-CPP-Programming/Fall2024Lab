@@ -5,11 +5,11 @@
 Understanding arrays and recursion is fundamental in C programming. Arrays provide a way to handle multiple data items of the same type, while recursion offers a powerful tool for solving problems that can be broken down into simpler, repeatable tasks. Combining these concepts can lead to elegant and efficient solutions.
 
 <!-- C Array -->
-## 1. C Array
+##  C Array
 
 In C, an array is a collection of elements of the same data type stored in contiguous memory locations. Arrays allow you to store multiple values under a single variable name, making it easier to manage large amounts of data.
 
-### 1.1 Declaring and Initializing Arrays
+###  Declaring and Initializing Arrays
 
 To declare an array, specify the data type and the number of elements:
 ```c
@@ -37,7 +37,7 @@ printf("%d", numbers[0]); // Accesses the first element
 numbers[2] = 10;          // Sets the third element to 10
 ```
 
-## 1.2 Multidimensional Arrays
+##  Multidimensional Arrays
 
 C supports multidimensional arrays, which are essentially arrays of arrays.
 
@@ -60,10 +60,10 @@ Accessing Elements:
 printf("%d", matrix[0][1]); // Prints the element in the first row, second column
 ```
 <!-- Recursion -->
-# 2. Recursion
+#  Recursion
 Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem. It’s essential to define a base case to prevent infinite recursion.
 
-## 2.1 Basic Syntax of a Recursive Function
+##  Basic Syntax of a Recursive Function
 ```c++
 returnType functionName(parameters) {
     if (base_case_condition) {
@@ -140,7 +140,7 @@ int main() {
 }
 ```
 
-# 3. Combining Arrays and Resursion
+#  Combining Arrays and Resursion
 
 ```c++
 #include <iostream>
@@ -162,7 +162,7 @@ int main() {
 }
 ```
 
-# 4. Conclusion
+#  Conclusion
 
 Base Case: Always ensure that your recursive functions have a valid base case to terminate recursion.
 
