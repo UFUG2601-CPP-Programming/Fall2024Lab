@@ -236,7 +236,7 @@ int main() {
 ```
 
 ```c++
-// Outside Example
+// Outside example
 class MyClass {        // The class
   public:              // Access specifier
     void myMethod();   // Method/function declaration
