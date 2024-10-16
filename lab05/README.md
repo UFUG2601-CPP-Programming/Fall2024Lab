@@ -2,9 +2,8 @@
 
 ## Important Notes
 - **Please finish the problems in the contest "Lab05" in OJ by the end of this week (2024-10-20 23:59:59).**
-- 
-## Our Goal in Lab 05
-In this lab, you will deepen your understanding of recursive function design and gain foundational knowledge of C++ classes.
+  
+**Our Goal in Lab 05** : In this lab, you will deepen your understanding of recursive function design and gain foundational knowledge of C++ classes.
 
 # Recap: Recursion
 
@@ -36,14 +35,20 @@ There are three types of recursion: **tail recursion**, **head recursion**, and 
 You can review the sample code for each type below to better understand their features and application scenarios.
 
 
-**Tail recursion example: check whether a string is a palindrome**
+### Tail recursion example: check whether a string is a palindrome
+
 In tail recursion, only recursive call is present at the end of the function. 
 
-This problem can be addressed using the following tail recursive function.
+A tail-recursive function can be implemented to check whether a string is a palindrome.
 
-**Hint**: A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). For example:
+**Hint**: A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). 
+
+For example:
+
 Words: "radar," "level," "civic"
+
 Phrases: "A man, a plan, a canal, Panama!"
+
 Numbers: 121, 12321
 
 In this example, we will focus solely on the case where the input string is a word.
@@ -66,11 +71,13 @@ bool isPalindrome(const std::string & text, int start, int end) {
 ```
 
 
-**Head recursion example: head recursion version of factorial**
+### Head recursion example: head recursion version of factorial
 
 In head recursion, the recursive call is present at the start of the function and only a single recursive call is used.
 
-Here, we demonstrate how to compute the factorial using both head recursion and tail recursion. It is important to note that the following programs are provided for illustrative purposes only. It is not advisable to use recursive functions to solve every problem, especially for specific types of recursion.
+Here, we demonstrate how to compute the factorial using both head recursion and tail recursion. 
+
+It is important to note that the following programs are provided for illustrative purposes only. It is not advisable to use recursive functions to solve every problem, especially for specific types of recursion.
 
 ```c++
 // Tail recursive version of factorial
@@ -93,11 +100,11 @@ int head_factorial(int n, int num=1){
 ```
 
 
-**Tree recursion example: find the maximum elements in an array**
+### Tree recursion example: find the maximum elements in an array
 
 In tree recursion, there are multiple recursive calls present in the body of the function. While tracing tree recursion, we get a tree-like structure where multiple recursive calls branch from one function. 
 
-This problem can be addressed using the following tree recursive function.
+A tree recursive function can be implemented to find the maximum element in an array.
 
 ```c++
 // Recursive function to find the maximum element in the array
