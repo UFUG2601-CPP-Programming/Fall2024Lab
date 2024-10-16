@@ -212,6 +212,44 @@ int main() {
 }
 ```
 
+## Example: Define class methods
+
+Methods are functions that belong to a class. There are two ways to define methods within a class: **inside the class definition**, and **outside the class definition**.
+In the following example, we will define a method within the class and name it `myMethod`.
+
+Note: You can access methods in the same way you access attributes: by creating an object of the class and using dot notation (e.g., `object.method()`).
+
+```c++
+// Inside example
+class MyClass {        // The class
+  public:              // Access specifier
+    void myMethod() {  // Method/function defined inside the class
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;     // Create an object of MyClass
+  myObj.myMethod();  // Call the method
+  return 0;
+}
+```
+
+```c++
+// Outside Example
+class MyClass {        // The class
+  public:              // Access specifier
+    void myMethod();   // Method/function declaration
+};
+
+// Method/function definition outside the class
+void MyClass::myMethod() {
+  cout << "Hello World!";
+}
+
+// Same main function
+```
+
 ## Reference:
 
 **GeeksforGeeks**
