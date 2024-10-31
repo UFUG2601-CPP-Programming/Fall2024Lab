@@ -145,3 +145,62 @@ This example demonstrates the basics of binary file I/O in C++. You can expand u
 * **The code folder contain the example useful for Lab-07**
 
 ## String
+
+# String Operations in C++
+
+In C++, the `std::string` class provides a range of convenient functions to handle and manipulate text data. Here are some common operations you can perform with strings:
+
+## 1. Creating and Initializing Strings
+- **Creating an empty string**: `std::string s;`
+- **Initializing with text**: `std::string s = "Hello";`
+- **Copy constructor**: `std::string s2(s);`
+
+## 2. Basic Properties and Methods
+- **Length**: Use `s.length()` or `s.size()` to get the number of characters in the string.
+- **Check if empty**: `s.empty()` returns `true` if the string is empty.
+- **Clear string**: `s.clear()` removes all characters from the string.
+
+## 3. Accessing Characters
+- **Access individual character**: `s[i]` or `s.at(i)` retrieves or modifies the character at index `i`. `at` performs bounds checking, while `[]` does not.
+- **First and last characters**: `s.front()` retrieves the first character, and `s.back()` retrieves the last character.
+
+## 4. String Concatenation
+- **Concatenating strings**: Use the `+` operator: `std::string result = s1 + s2;`
+- **Appending strings**: `s += " World";` or `s.append(" World");`
+
+## 5. Substrings
+- **Extract a substring**: `s.substr(start, length)` extracts a substring starting from `start` and of specified `length`.
+
+## 6. String Search
+- **Find a substring**: `s.find("text")` returns the starting index of the first occurrence of `"text"` or `std::string::npos` if not found.
+- **Reverse find**: `s.rfind("text")` finds the last occurrence of `"text"`.
+
+## 7. String Comparison
+- **Comparison**: `s.compare(other)` compares `s` with `other`. It returns `0` if they are equal, a positive value if `s` is greater, and a negative value if `s` is smaller.
+
+## 8. String Insertion and Erasure
+- **Insert**: `s.insert(pos, "text")` inserts `"text"` at position `pos`.
+- **Erase**: `s.erase(pos, len)` removes `len` characters starting from `pos`.
+
+## 9. Conversion to C-Style String
+- **Convert to C-string**: Use `s.c_str()` to get a `const char*` pointer to the string's data.
+
+## 10. Example of String Operations
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string s = "Hello World";
+    std::cout << "Length: " << s.length() << std::endl;
+    std::cout << "Substring: " << s.substr(0, 5) << std::endl;
+    std::cout << "Position of 'World': " << s.find("World") << std::endl;
+    s.insert(5, ",");
+    std::cout << "After insertion: " << s << std::endl;
+    s.erase(5, 1);
+    std::cout << "After erasure: " << s << std::endl;
+
+    return 0;
+}
+
+# This code demonstrates various string operations.
