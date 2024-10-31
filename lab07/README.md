@@ -144,9 +144,7 @@ This example demonstrates the basics of binary file I/O in C++. You can expand u
 * freopen is a C-style approach, allowing you to redirect standard input or output, which can be useful in some scenarios.
 * **The code folder contain the example useful for Lab-07**
 
-## String
-
-# String Operations in C++
+# String
 
 In C++, the `std::string` class provides a range of convenient functions to handle and manipulate text data. Here are some common operations you can perform with strings:
 
