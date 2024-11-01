@@ -1,4 +1,4 @@
-# Lab 06 File-IO and String
+# Lab 07 File-IO and String
 
 ## Stream IO
 ### Part 1: Using ifstream
