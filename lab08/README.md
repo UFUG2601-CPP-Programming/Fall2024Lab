@@ -58,7 +58,8 @@ void LinkedList::insertFront(int data) {
     head = newNode;
 }
 ```
-2. **Insert After a Key**: This operation inserts a new node after a specified key value.
+2. **Insert After a Key**: This operation inserts a new node after a specified key value.  
+
 ![insert-after](./picture/insert-after.png)
 ```cpp
 void LinkedList::insertAfterKey(int key, int data) {
