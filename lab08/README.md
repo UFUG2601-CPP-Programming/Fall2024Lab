@@ -38,15 +38,17 @@ private:
     Node* head;
 public:
     LinkedList() : head(nullptr) {}
+    ~LinkedList();
     Node* getHead() { return head; }
     void insertFront(int data);
+    void insertBack(int data);
     void insertAfterKey(int key, int data);
     void deleteNode(int key);
     bool searchKey(int key);
     void print();
 };
 ```
-In this class, `head` is a pointer to the first node in the list. The member functions `insertFront`, `insertAfterKey`, `deleteNode`, `searchKey`, and `print` provide basic operations on the linked list.
+In this class, `head` is a pointer to the first node in the list. The member functions `insertFront`, `insertBack`, `insertAfterKey`, `deleteNode`, `searchKey`, and `print` are used to perform various operations on the linked list.
 
 ### Insert Operations
 1. **Insert at the Front**: This operation inserts a new node at the beginning of the list.
@@ -58,7 +60,28 @@ void LinkedList::insertFront(int data) {
     head = newNode;
 }
 ```
-2. **Insert After a Key**: This operation inserts a new node after a specified key value.  
+
+2. **Insert at the Back**: This operation inserts a new node at the end of the list.
+
+![insert-back](./picture/insert-back.png)
+```cpp
+void LinkedList::insertBack(int data) {
+    Node* newNode = new Node();
+    newNode->data = data;
+    newNode->next = nullptr;
+    if (head == nullptr) {
+        head = newNode;
+        return;
+    }
+    Node* current = head;
+    while (current->next != nullptr) {
+        current = current->next;
+    }
+    current->next = newNode;
+}
+```
+
+3. **Insert After a Key**: This operation inserts a new node after a specified key value.  
 
 ![insert-after](./picture/insert-after.png)
 ```cpp
@@ -96,12 +119,25 @@ To create a linked list which is `1->2->3` , we can use the following code:
 ```cpp
 int main() {
     LinkedList list;
-    list.insertFront(3);
-    list.insertFront(2);
-    list.insertFront(1);
+    list.insertBack(1);
+    list.insertBack(2);
+    list.insertBack(3);
     return 0;
 }
 ```
+### Deconstructor
+To avoid memory leaks, we need to delete all the nodes in the linked list when the list is destroyed.
+```cpp
+LinkedList::~LinkedList() {
+    Node* current = head;
+    while (current != nullptr) {
+        Node* next = current->next;
+        delete current;
+        current = next;
+    }
+}
+```
+
 
 ## Reference
 * [VS Code Compile Multiple Files](https://blog.csdn.net/RayJinStudio/article/details/114643211)

@@ -1,10 +1,34 @@
 #include "linked_list.h"
 
+LinkedList::~LinkedList() {
+    Node* current = head;
+    while (current != nullptr) {
+        Node* next = current->next;
+        delete current;
+        current = next;
+    }
+}
+
 void LinkedList::insertFront(int data) {
     Node* newNode = new Node();
     newNode->data = data;
     newNode->next = head;
     head = newNode;
+}
+
+void LinkedList::insertBack(int data) {
+    Node* newNode = new Node();
+    newNode->data = data;
+    newNode->next = nullptr;
+    if (head == nullptr) {
+        head = newNode;
+        return;
+    }
+    Node* current = head;
+    while (current->next != nullptr) {
+        current = current->next;
+    }
+    current->next = newNode;
 }
 
 void LinkedList::insertAfterKey(int key, int data) {
