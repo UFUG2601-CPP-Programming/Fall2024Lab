@@ -1,4 +1,4 @@
-# Lab 10 C++ Template
+# Lab 10 C++ Template and Sequential Containers
 
 # Basic Syntax and Examples
 
