@@ -66,6 +66,46 @@ public:
     int getSize() { return size; }
 };
 ```
+### Template specialization
+Template specialization allows you to customize the behavior of a template for a specific data type or scenario.
+
+
+
+```cpp
+// General template
+template <typename T>
+class Logger {
+public:
+    void log(const T& value) {
+        std::cout << "Logging value: " << value << std::endl;
+    }
+};
+
+// Specialized template for `double`
+template <>
+class Logger<double> {
+public:
+    void log(const double& value) {
+        // Log with 2 decimal places
+        std::cout << "Logging double: " << std::fixed << std::setprecision(2) << value << std::endl;
+    }
+};
+
+// Specialized template for `std::string`
+template <>
+class Logger<std::string> {
+public:
+    void log(const std::string& value) {
+        std::cout << "Logging string: \"" << value << "\"" << std::endl;
+    }
+};
+```
+
+In this example, we have a general template for the `Logger` class that logs any type of value. We then specialize the template for `double` (as we want `double` values to be logged with 2 decimal places) and for `std::string` (as we want strings to be logged with quotes).
+
+The compiler will choose the specialized version of the template when the type matches the specialization. 
+
+More detailed example can be found in the [example_template_specialization.cpp](codes/example_template_specialization.cpp) file.
 
 ## Introduction to Sequential Containers in C++
 
