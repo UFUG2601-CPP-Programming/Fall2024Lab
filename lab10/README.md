@@ -1,6 +1,6 @@
 # Lab 10 C++ Template and Sequential Containers
 
-# Basic Syntax and Examples
+## Basic Syntax and Examples of Template
 
 ### Function Templates
 
