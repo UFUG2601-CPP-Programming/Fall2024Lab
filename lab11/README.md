@@ -168,3 +168,5 @@ std::unordered_set<int> unorderedSetExample;
     return 0;
 }
 ```
+## Set Operation: Union and intersection 
+* The C++ collection container also supports set operations such as **intersection** and **union** of sets. Please find the corresponding examples in the code folder.
